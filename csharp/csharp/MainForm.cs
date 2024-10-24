@@ -32,6 +32,7 @@ namespace csharp
 		
 		void BtncalClick(object sender, EventArgs e)
 		{
+  			//aqui declara variables prar leer
 			string apepa,apemate,nombre,derec,tel,dia,anio,mes,rfc;
 			int longitud;
 			
@@ -43,7 +44,7 @@ namespace csharp
 			dia=txtdia.Text;
 			mes=txtmes.Text;
 			anio=txtanio.Text;
-			
+		//aqui agara los balores requeridos agara la cantidad como los primeros 2 o 1.
 			longitud=anio.Length;
 			
 			apepa=apepa.Substring(0,2);
@@ -52,7 +53,7 @@ namespace csharp
 			anio=anio.Substring(2,2);
 			dia=dia.Substring(0,2);
 			mes=mes.Substring(0,2);
-			
+			//aquiaseque seordenendemasnera comobaconformado 
 			rfc=apepa+apemate+nombre+anio+dia+mes;
 			txtrfc.Text=rfc;
 			
